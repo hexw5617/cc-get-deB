@@ -12,6 +12,18 @@
 </head>
 <body>
     <h1>this is a web</h1>
+
+    <script>
+function Box(){this.name='zhang';}
+     function Desk(){this.age=100;}
+     function Table(){this.lever=1000}
+     Desk.prototype=new Box();
+     var desk=new Desk();    
+    var table=new Table();
+    alert(desk instanceof Box);
+    alert(Desk instanceof Box);
+    alert(desk  instanceof Desk );
+    </script>
 </body>
 
 </html>
